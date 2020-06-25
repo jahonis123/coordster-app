@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="column" aria-colspan="0">
+                <img style="-webkit-user-select: none;margin: auto;cursor: zoom-out;" src= "{{ artist_diction[artist]['images'][0]['url'] }}" width="325" height="325">
+                <h4>Your artist:</h4>
+                <h4>{{ artist }}</h4>
+            </div>
+            <div class="column">
+                <img style="-webkit-user-select: none;margin: auto;cursor: zoom-out;" src= "{{ artist_diction[artists[0][0]]['images'][0]['url'] }}" width="325" height="325">
+                <h4>Collaborating artist:</h4>
+                <h4>{{ artists[0][0] }} </h4>
+            </div>
+        </div>
+        <div class="row">
+            <h1></h1>
+        </div>
+        <div class="row">
+            <h1></h1>
+        </div>
+        <div class="row">
+            <h1></h1>
+        </div>
+        <h4>Song collaboration popularity prediction: {{ top_score }}/100 </h4>
+    </div>
+    <div class="row">
+        <h1></h1>
+    </div>
+    <div class="row">
+        <h1></h1>
+    </div>
+    <div class="row">
+        <h1></h1>
+    </div>
+    <div class="row">
+        <h1></h1>
+    </div>
+    <div class="container">
+        <h4>Other top artists:</h4>
+        <h4>-{{ artists[1][0] }} </h4>
+        <h4>-{{ artists[2][0] }} </h4>
+        <h4>-{{ artists[3][0] }} </h4>
+        <h4>-{{ artists[4][0] }} </h4>
+    </div>
+{% endblock content %}
